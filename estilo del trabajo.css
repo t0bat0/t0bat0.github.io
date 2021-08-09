@@ -1,0 +1,173 @@
+/* Fonts */
+@font-face {
+    font-family: 'Blocked';
+    src: url('fonts/blocked/Blocked.eot');
+    src: url('fonts/blocked/Blocked.eot?#iefix') format('embedded-opentype'),
+        url('fonts/blocked/Blocked.woff2') format('woff2'),
+        url('fonts/blocked/Blocked.woff') format('woff'),
+        url('fonts/blocked/Blocked.ttf') format('truetype'),
+        url('fonts/blocked/Blocked.svg#Blocked') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Animacion */
+#GAME{
+    animation-name: gameover;
+    animation-duration: 0.001s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 160px;
+    font-family: Blocked;
+    text-align: center;
+    text-justify: auto;
+}
+#OVER{
+    margin-top: -170px;
+    animation-name: gameover;
+    animation-duration: 0.001s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 160px;
+    font-family: Blocked;
+    text-align: center;
+    text-justify: auto;
+}
+#NEVER{
+    margin-top: -200px;
+    margin-bottom: 120px;
+    animation-name: logonever;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes gameover{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes logonever{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Nav */
+.nav-bar{
+    display: inline-block;
+     color: oldlace;
+     padding-top: 2.5vh;
+     text-decoration: none;
+     font-size: 2.25vh;
+}
+.nav-bar:hover{
+    color: blanchedalmond;
+}
+.nav-bar:active{
+    color: black;
+}
+nav{
+    background-color: #1B1D29;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -10px;
+    margin-right: -10px;
+    /*margin-bottom: 10px;*/
+}
+body{   
+    background-image:url(foto.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.nav-menu{
+    background-color: #1B1D29;
+    color: oldlace;  
+    border: 1px solid oldlace;
+    display: none;
+}
+.contiene-columnas{
+    margin: 0 auto;
+    width: 90%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.precio{
+    font-size: 5vh;
+    color: #fff;
+}
+.columnas{
+    background: #1B1D29;
+    color: oldlace;
+    border: 0.25vh solid oldlace;
+    margin: 0 auto;
+    margin-top: 1.5vh ;
+    padding: 3vh;
+    border-radius: 1vh;
+    box-shadow: -0.90vh 0.90vh 0.45vh #888;
+    width: 24%;
+    box-sizing: border-box;
+}
+.precio-link{
+    background:seagreen;
+    display: block;
+    text-decoration: none;
+    padding: 1vh;
+    color: oldlace;
+    border-radius: 0.5vh;
+    margin-top: 2vh;
+}
+@media (max-width: 720px) {
+   nav{
+       background: #1B1D29;
+       flex-direction: column;}
+   .nav-bar{
+       margin: 10px 0px;
+       text-align: center;}
+   .nav-menu{
+       display: inline-block;}
+   .fantasma{
+    display: none;}
+    #control{
+        margin: auto;}
+}
+@media (max-width: 720px){
+    .columnas{
+        width: 45%;
+        margin-bottom: 1.5vh;}
+}
+@media (max-width: 650px){
+    .columnas{
+        width: 100%;
+        margin-bottom: 1.5vh;}
+}
+footer{
+    margin-top: 500px;
+    padding:50px;
+    color:blanchedalmond;
+    background-color:#111111;
+}

@@ -1,44 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMES NEVER OVER</title>
-    <link rel="icon" href="control.png" type="image/gif" sizes="64x64">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo_menu.css">
+    <title>Menu</title>
 </head>
-
 <body>
-    <nav>
-        <a href="index.html" id="control"><img src="control.png"
-            width="80vh" height="70vh" alt="CONTROL"> </a>
-        <button class="nav-menu" onclick="accion()">MENÚ</button>
-        <a href="juegos.html" class="nav-bar fantasma">JUEGOS</a>
-        <a href="nosotros.html" class="nav-bar fantasma">NOSOTROS</a>
-        <a href="ayuda.html" class="nav-bar fantasma">AYUDA</a>
-    </nav>
-
-    <div>
-    <p id="GAME">GAME</p>    
-    <img src="never.png" alt="NEVER" id="NEVER">
-    <figcaption id="OVER">OVER</figcaption>
+    <div class="row" style="margin-top: 25%;">
+        <button class="col"><a href=""></a>messi</button>
+        <button class="col"><a href=""></a>Lore</button>
     </div>
-
-    <footer>
-        <h1>FACHA</h1>
-    </footer>
-
-    <script>
-        function accion(){
-            console.log('SOY RE FACHERO');
-            var ancla=document.getElementsByClassName('nav-bar');
-            for(var i = 0; i <ancla.length; i++){
-                ancla[i].classList.toggle('fantasma') 
-            } 
-         }
-    </script>
 </body>
 </html>
-
-<!-- pos eje z = z-index: x; position: absolute;  -->
